@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="width: 100%; height: 100%; margin: 0; padding: 0;">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" src="css/main.css" />
-        <link rel="stylesheet" src="css/fullpage.css" />
-        <script type="text/js" src="js/main.js"></script>
-        <script type="text/js" src="js/fullpage.js"></script>
+        <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullpage.css">
+        <script src="node_modules/fullpage.js/dist/fullpage.js"></script>
         <title>Document</title>
     </head>
-    <body>
-        <script src="js/fullpage.js"></script>
-        <div id="fullpage">
-            <div class="section">Bing bong</div>
-            <div class="section">Bing bong</div>
-            <div class="section">
-                <div class="slide"></div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-            </div>
+    <body style="background-color: grey; text-align: center;">
+    <div id="fullpage">
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section</div>
+        <div class="section">Some section
+            <div class="slide">testing</div>
+            <div class="slide">testing</div>
+            <div class="slide">testing</div>
+            <div class="slide">testing</div>
         </div>
+    </div>
+    <script src="node_modules/fullpage.js/dist/fullpage.min.js"></script>
+    <script src="js/main.js"></script>
     </body>
 </html>
