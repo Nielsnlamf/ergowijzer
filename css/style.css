@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("achtergrond_ergo.jpg");
+    background-image: url("../assets/achtergrond_ergo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial;
