@@ -24,17 +24,17 @@
         <i id="scroll-up" class="fa-solid fa-chevron-up"></i>
         <div class="slider-wrapper">
             <div class="slider">
-               <img src="./assets/koe.jpg" alt="koe" id="slide-1"> 
-               <img src="./assets/varken.jpg" alt="varken" id="slide-2"> 
-               <img src="./assets/kip.jpg" alt="kip" id="slide-3"> 
+               <img src="./assets/koe.jpg" alt="koe" id="slide-1" class="mySlides"> 
+               <img src="./assets/varken.jpg" alt="varken" id="slide-2" class="mySlides"> 
+               <img src="./assets/kip.jpg" alt="kip" id="slide-3" class="mySlides"> 
             </div>
             <div class="slider-nav">
-                <a href="#slide-1"></a>
-                <a href="#slide-2"></a>
-                <a href="#slide-3"></a>
+                <a onclick="plusDivs(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+                <a onclick="plusDivs(+1)"><i class="fa-solid fa-chevron-right"></i></a>
             </div>
         </div>
-        <img id="slideshow" src="https://media.s-bol.com/712A9ypoxMrG/550x367.jpg">
+        <!-- <img id="slideshow" src="https://media.s-bol.com/712A9ypoxMrG/550x367.jpg"> -->
     </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
