@@ -8,7 +8,7 @@ body{
     background-image: url("../assets/achtergrond_ergo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: Arial;
+    font-family: Arial, serif;
 }
 .container, .container2{
     display: flex;
@@ -120,4 +120,9 @@ body{
 
 .slider-nav a:hover {
     cursor: pointer;
+}
+
+#video {
+    height: 400px;
+    width: 50%;
 }
