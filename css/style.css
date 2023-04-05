@@ -72,15 +72,20 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 10px;
     cursor: pointer;
     width: 30px;
     height: 30px;
+    position: absolute;
+    z-index: 99999999;
+    left: 50%;
+    transform: translateX(-50%);
 }
 /* Container 2 */
 #scroll-up{
-    margin-top: 3.5%;
-    margin-bottom: 20px;
+    top: 102vh;
+}
+#scroll-down {
+    top: 94vh;
 }
 #slideshow{
     width: 75%;
@@ -96,6 +101,7 @@ body{
     width: 75%;
     margin: 0 auto;
     margin-bottom: 100px;
+    top: 200px;
 
 }
 
