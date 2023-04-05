@@ -6,10 +6,10 @@
 }
 
 body{
-    background-image: url("../assets/achtergrond_ergo.jpg");
+    background: url('../assets/achtergrond_ergo.jpg') fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: Arial, serif;
+    font-family: 'Merriweather', serif;
     padding: 0;
     margin: 0;
 }
