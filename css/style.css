@@ -14,6 +14,10 @@ body{
     margin: 0;
 }
 
+.home {
+    height: 100vh;
+}
+
 .home h1{
     text-align: center;
     font-size: 40px;
@@ -96,13 +100,16 @@ body{
 }
 
 /* Slider */
+.slider_page {
+    height: 100vh;
+}
+
 .slider-wrapper {
     position: relative;
     width: 75%;
     margin: 0 auto;
     margin-bottom: 100px;
-    top: 200px;
-
+    top: 80px;
 }
 
 .slider {
