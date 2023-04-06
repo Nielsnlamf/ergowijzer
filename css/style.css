@@ -4,7 +4,14 @@
     /* box-sizing: border-box; */
     /* border: 1px solid black; */
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
 body{
     background: url('../assets/achtergrond_ergo.jpg') fixed;
     background-size: cover;
@@ -16,9 +23,12 @@ body{
 
 .home {
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 .home h1{
+    position: relative;
+    top: 1%;
     text-align: center;
     font-size: 40px;
 }
@@ -86,7 +96,7 @@ body{
 }
 /* Container 2 */
 #scroll-up{
-    top: 103.5vh;
+    top: 106vh;
 }
 #scroll-down {
     top: 94vh;
@@ -102,6 +112,7 @@ body{
 /* Slider */
 .slider_page {
     height: 100vh;
+    scroll-snap-align: start;
 }
 
 .slider-wrapper {
@@ -109,7 +120,8 @@ body{
     width: 75%;
     margin: 0 auto;
     margin-bottom: 100px;
-    top: 80px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .slider {
