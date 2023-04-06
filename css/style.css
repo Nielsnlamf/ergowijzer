@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap');
+
 *{
     /* padding: 0;
     margin: 0; */
     /* box-sizing: border-box; */
     /* border: 1px solid black; */
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 a {
     text-decoration: none;
@@ -89,17 +94,13 @@ body{
     cursor: pointer;
     width: 30px;
     height: 30px;
-    position: absolute;
-    z-index: 99999999;
-    left: 50%;
-    transform: translateX(-50%);
 }
 /* Container 2 */
 #scroll-up{
-    top: 106vh;
+    margin-top: 10px;
 }
 #scroll-down {
-    top: 94vh;
+    margin-top: 5px;
 }
 #slideshow{
     width: 75%;
