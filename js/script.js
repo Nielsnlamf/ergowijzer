@@ -1,3 +1,11 @@
+function makeActive(event) {
+  var previous = document.getElementsByClassName("active");
+  if (previous.length > 0) {
+     previous[0].className = previous[0].className.replace(" active", "");
+  }
+  event.target.className += " active";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   var list = document.getElementsByClassName("topic");
   var list2 = document.getElementsByClassName("topic1");
@@ -28,6 +36,7 @@ function showDivs(n) {
 }
 
 function swapContent(e) {
+  makeActive(event);
   let topicNum = parseInt(e.getAttribute("data-topic"));
   var paragraphs = e.parentElement.parentElement.getElementsByClassName("topic");
   for (let i = 0; i < paragraphs.length; i++) {
@@ -35,4 +44,5 @@ function swapContent(e) {
     paragraphs[i].classList.add("hidden");
   }
   e.parentElement.parentElement.getElementsByClassName("topic")[topicNum-1].classList.remove("hidden");
-}
+};
+
