@@ -6,46 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ergowijzer</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-    <div class="home">
+<div class="home">
     <h1>Wat is RSI?</h1>
-        <div class="home_content">
-            <div class="video">
-                <iframe id="video" src="https://www.youtube.com/embed/nFH63-Ljk2I" title="rsi video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="tekst">
-                <p>RSI ontstaat door herhaalde bewegingen met een muis of toetsenbord en kan leiden tot pijn en verminderde beweeglijkheid. 
-                Het is een groeiend probleem voor mensen die lange tijd achter een computer werken. Gelukkig zijn er manieren om RSI te voorkomen en te behandelen, 
-                zoals het aanpassen van je werkhouding, het nemen van pauzes en het doen van oefeningen. Het is belangrijk om naar je lichaam te luisteren en vroegtijdig actie te ondernemen om de impact te beperken en weer pijnvrij te werken.
-                </p>
-            </div>
+    <div class="home_content">
+        <div class="video">
+            <iframe id="video" src="https://www.youtube.com/embed/nFH63-Ljk2I" title="rsi video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="tekst">
+            <p>RSI ontstaat door herhaalde bewegingen met een muis of toetsenbord en kan leiden tot pijn en verminderde
+                beweeglijkheid.
+                Het is een groeiend probleem voor mensen die lange tijd achter een computer werken. Gelukkig zijn er
+                manieren om RSI te voorkomen en te behandelen,
+                zoals het aanpassen van je werkhouding, het nemen van pauzes en het doen van oefeningen. Het is
+                belangrijk om naar je lichaam te luisteren en vroegtijdig actie te ondernemen om de impact te beperken
+                en weer pijnvrij te werken.
+            </p>
+        </div>
 
-        </div>
-        <!--TODO make the scroll buttons animated -->
-        <a href="#slider"><i id="scroll-down" class="fa-solid fa-chevron-down"></i></a>
     </div>
-    <div class="slider_page">
-        <!--TODO make the scroll buttons animated -->
-        <a href="#video"><i id="scroll-up" class="fa-solid fa-chevron-up"></i></a>
-        <div class="slider-wrapper">
-            <div id="slider" class="slider">
-               <img src="./assets/introductie.jpg" alt="introductie" id="slide-1" class="mySlides"> 
-               <img src="./assets/werkhouding.jpg" alt="Werkhouding" id="slide-2" class="mySlides"> 
-               <img src="./assets/werkorganisatie.jpg" alt="Werkorganisatie" id="slide-3" class="mySlides"> 
-               <img src="./assets/werkplek.jpg" alt="Werkplek" id="slide-4" class="mySlides"> 
+    <!--TODO make the scroll buttons animated -->
+    <a href="#slider"><i id="scroll-down" class="fa-solid fa-chevron-down"></i></a>
+</div>
+<div class="slider_page">
+    <!--TODO make the scroll buttons animated -->
+    <a href="#video"><i id="scroll-up" class="fa-solid fa-chevron-up"></i></a>
+    <!--TODO MAKE THE SLIDER ANIMATED -->
+    <div class="slider-wrapper">
+        <div id="slider" class="slider">
+            <div id="slide1" class="mySlides"
+                 style="background-size: cover; background-image: url('./assets/introductie.jpg')">
+                <h1 class="chapter-title">Introductie</h1>
+                <div class="switches">
+                    <button data-topic="1" onclick="swapContent(this)">Wat is RSI?</button>
+                    <button data-topic="2" onclick="swapContent(this)">Drie stadia</button>
+                    <button data-topic="3" onclick="swapContent(this)">Geschiedenis</button>
+                    <button data-topic="4" onclick="swapContent(this)">Regelgeving</button>
+                </div>
+                <p class="topic topic1"><span class="subtitle">Wat is RSI?</span><br><br>RSI is een afkorting voor “Repetitive Strain Injury” en is een verzamelterm voor verschillende spier- en gewrichtsklachten. RSI kan ontstaan bij een herhaalde beweging waardoor er continu spanning op dezelfde spieren staat. Dit gebeurt vooral op het werk, met name tijdens langdurig computerwerk. Pijn, tintelingen, stijfheid of een doof gevoel zijn symptomen van RSI. Je kan deze symptomen voorkomen doormiddel van een ergonomisch ingerichte werkplek en te zorgen dat je voldoende beweging krijgt. Op het moment dat je van een van deze symptomen last krijgt kun je een fysiotherapeut of oefentherapeut inschakelen.</p>
+                <p class="topic topic2"><span class="subtitle">Drie Stadia</span><br><br>In stadium 1 ontstaan er klachten zoals pijn, stijfheid in de armen en/of gevoelloosheid en tintelingen in handen en vingers. De klachten verminderen door rust te nemen en deze treden ’s nachts niet op. Dit stadium kan maanden duren en heeft gelukkig geen invloed op de werkprestaties.
+                    <br>In stadium 2 zijn de klachten deel hetzelfde als in stadium 1. Hier bovenop kan je krachtsvermindering, bewegingsbeperking en gebrek aan controle in je armen en/of handen krijgen. Deze klachten treden langduriger op en er is geen duidelijke relatie meer tussen pijn en werk. ’s Nachts kun je nog steeds last hebben van deze klachten. Dit stadium kan maanden lang duren en heeft ook invloed op de werkprestaties.
+                    <br>In stadium 3 zijn de klachten deels hetzelfde als in stadium 1 en 2. De klachten die je in stadium 2 kan krijgen zijn in stadium 3 erger geworden en je hebt hier ook constant last van. Doordat je zoveel last hebt van deze klachten beïnvloeden ze je nachtrust, werk, huishouden en hobby’s. Dit stadium kan maanden tot jaren duren </p>
+                <p class="topic topic3"><span class="subtitle">Geschiedenis</span><br><br>RSI is pas een bekend fenomeen sinds de jaren 70 van de vorige eeuw. Het werd toen geconstateerd bij medewerkers van een automobielfabriek in de Verenigde Staten. Sindsdien is er meer onderzoek gedaan naar RSI en is het een belangrijk gezondheidsprobleem geworden voor mensen die beroepshalve veel achter de computer werken. </p>
+                <p class="topic topic4"><span class="subtitle">Regelgeving</span><br><br>In Nederland is er wetgeving die werkgevers verplicht om maatregelen te nemen om RSI te voorkomen of te verminderen. Deze wetgeving staat bekend als de Arbowet. Ook zijn er in Nederland richtlijnen voor het gebruik van beeldschermen opgesteld, de zogenaamde NEN-normen. </p>
+                </div>
+            <div id="slide2" class="mySlides"
+                 style="background-size: cover; background-image: url('./assets/werkhouding.jpg')">
+                <h1 class="chapter-title">Werkhouding</h1>
+                <div class="switches">
+                    <button data-topic="1" onclick="swapContent(this)">Houding</button>
+                    <button data-topic="2" onclick="swapContent(this)">Persoonskenmerken</button>
+                    <button data-topic="3" onclick="swapContent(this)">Lichamelijke Conditie</button>
+                </div>
+                <p class="topic topic1"><span class="subtitle">Houding</span><br><br>Je houding is zeer belangrijk om RSI tegen te gaan. Een goede houding begint door je hoofd zoveel mogelijk rechtop te houden, en deze niet voorover te buigen. Ondersteun je armen en polsen doormiddel van een armleuning en verander regelmatig van houding. Kies met voorkeur een werkplek als bijvoorbeeld een tafel of bureau aangezien deze genoeg ondersteuning bieden, beter dan bijvoorbeeld een bank of bed.</p>
+                <p class="topic topic2"><span class="subtitle">Persoonskenmerken</span><br><br>Naast alle fysieke aspecten zijn er ook nog persoonlijke eigenschappen die kunnen bijdragen aan de ontwikkeling van RSI. Voorbeelden hiervan zijn perfectionisme of een hoge werkdruk. Deze twee zorgen bijvoorbeeld voor stress die beweging kunnen belemmeren wat er uiteindelijk voor zorgt dat de gewrichten eronder lijden en RSI beginnen te ontwikkelen.</p>
+                <p class="topic topic3"><span class="subtitle">Lichamelijke Conditie</span><br><br>Naast je houding zijn voldoende beweging en je conditie zeer belangrijk. Een goede lichamelijke conditie kan je helpen bij het voorkomen van RSI. Een goede lichamelijke conditie kan je opbouwen door regelmatig te sporten en bewegen, dit zorgt namelijk voor een goede doorbloeding van de spieren en pezen. Daarnaast is het belangrijk om voldoende rust te nemen en voldoende te slapen, zodat het lichaam kan herstellen.</p>
             </div>
-            <div class="slider-nav">
-                <a onclick="plusDivs(-1)"><i class="fa-solid fa-chevron-left"></i></a>
-                <a onclick="plusDivs(+1)"><i class="fa-solid fa-chevron-right"></i></a>
+            <div id="slide3" class="mySlides"
+                 style="background-size: cover; background-image: url('./assets/werkorganisatie.jpg')">
+                <h1 class="chapter-title">Werkplek</h1>
+                <div class="switches">
+                    <button data-topic="1" onclick="swapContent(this)">Monitor</button>
+                    <button data-topic="2" onclick="swapContent(this)">Toetsenbord en Muis</button>
+                    <button data-topic="3" onclick="swapContent(this)">Stoel</button>
+                    <button data-topic="4" onclick="swapContent(this)">Werkblad</button>
+                </div>
+                <p class="topic1 topic"><span class="subtitle">Monitor</span><br><br>Een goede monitor is belangrijk voor het voorkomen van RSI. Zorg ervoor dat de monitor op de juiste hoogte is ingesteld, zodat je ogen op gelijke hoogte zijn met de bovenkant van het scherm. Daarnaast moet de monitor op de juiste afstand van je ogen staan, ongeveer een armlengte. Zorg er ook voor dat het beeldscherm voldoende groot is en een goede resolutie heeft, zodat je niet te scherp hoeft te kijken naar je scherm.</p>
+                <p class="topic2 topic"><span class="subtitle">Toetsenbord en Muis</span><br><br>Een goed toetsenbord en muis zijn noodzakelijk voor het voorkomen van RSI. Zorg ervoor dat het toetsenbord op de juiste hoogte staat ingesteld, zodat je armen kunnen ontspannen op de armleuningen van de stoel en de polsen in een neutrale positie kunnen worden gehouden. Hetzelfde geldt voor de muis, deze moet op gelijke hoogte staan met het toetsenbord. Het wordt geadviseerd om te kiezen voor een ergonomische muis die de pols ondersteunt. </p>
+                <p class="topic3 topic"><span class="subtitle">Stoel</span><br><br>Een goede bureaustoel is een investering die zichzelf terugbetaalt. Kies voor een stoel die verstelbaar is in hoogte, zodat je voeten plat op de grond kunnen staan en je knieën in een hoek van 90 graden zijn gebogen. Zorg er ook voor dat de rugleuning van de stoel verstelbaar is, zodat je rug goed wordt ondersteund.</p>
+                <p class="topic4 topic"><span class="subtitle">Werkblad</span><br><br>Als laatste is het belangrijk om te letten op de hoogte van je werkblad. Zorg ervoor dat het werkblad op de juiste hoogte staat zodat je ellebogen in een hoek van 90 graden gebogen zijn en je schouders ontspannen zijn.</p>
+            </div>
+            <div id="slide4" class="mySlides"
+                 style="background-size: cover; background-image: url('./assets/werkplek.jpg')">
+                <h1 class="chapter-title">Werkorganisatie</h1>
+                <div class="switches">
+                    <button data-topic="1" onclick="swapContent(this)">Werktaken</button>
+                    <button data-topic="2" onclick="swapContent(this)">Werktijden</button>
+                    <button data-topic="3" onclick="swapContent(this)">Werkdruk</button>
+                </div>
+                <p class="topic1 topic"><span class="subtitle">Werktaken</span><br><br>De taken die je op je werk uitvoert kunnen een grote invloed hebben op het ontstaan van RSI. Het is belangrijk om afwisselende taken uit te voeren en vaak van houding te veranderen. Neem voldoende pauzes en stretch regelmatig. Probeer ook de last op je handen en polsen te verminderen door bijvoorbeeld een ergonomische muis en toetsenbord te gebruiken. Door deze aanpassingen te doen, verminder je de kans op RSI. </p>
+                <p class="topic2 topic"><span class="subtitle">Werktijden</span><br><br>Lange werktijden kunnen ook bijdragen aan het ontstaan van RSI. Het is daarom belangrijk om vaak pauzes te nemen en niet te lang achter elkaar door te werken. Probeer na iedere 50 minuten werk 10 minuten pauze te nemen om je spieren even te laten ontspannen. Blijf niet te lang zitten, maar beweeg ook tussendoor even. Door deze veranderingen toe te passen in je werktijden, verminder je de kans op RSI. </p>
+                <p class="topic3 topic"><span class="subtitle">Werkdruk</span><br><br>Een hoge werkdruk kan als gevolg stress en spanning hebben, wat ook kan leiden tot RSI. Het is belangrijk om je werk goed te plannen en prioriteiten te stellen, zodat je niet te veel hooi op je vork neemt. Bespreek je werklast met je leidinggevende en probeer samen naar oplossingen te zoeken. Neem ook voldoende rust en ontspanning na je werk, zodat je lichaam kan herstellen. Door de werkdruk te verminderen, verminder je ook de kans op RSI. </p>
             </div>
         </div>
-        <!-- <img id="slideshow" src="https://media.s-bol.com/712A9ypoxMrG/550x367.jpg"> -->
+        <div class="slider-nav">
+            <a onclick="plusDivs(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+            <a onclick="plusDivs(+1)"><i class="fa-solid fa-chevron-right"></i></a>
+        </div>
     </div>
-    <script src="./js/script.js"></script>
+</div>
+<script src="./js/script.js"></script>
 </body>
 </html>

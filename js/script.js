@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", () => {
+  var list = document.getElementsByClassName("topic");
+  var list2 = document.getElementsByClassName("topic1");
+  for (let i = 0; i < list.length; i++) {
+    list[i].classList.add("hidden");
+  }
+  for (let i = 0; i < list2.length; i++) {
+    list2[i].classList.remove("hidden");
+  }
+
+})
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -14,4 +25,14 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
+}
+
+function swapContent(e) {
+  let topicNum = parseInt(e.getAttribute("data-topic"));
+  var paragraphs = e.parentElement.parentElement.getElementsByClassName("topic");
+  for (let i = 0; i < paragraphs.length; i++) {
+    // console.log(paragraphs[i]);
+    paragraphs[i].classList.add("hidden");
+  }
+  e.parentElement.parentElement.getElementsByClassName("topic")[topicNum-1].classList.remove("hidden");
 }
